@@ -1,0 +1,10 @@
+{
+    "sysroot_src": "/home/sandev/.asdf/installs/rust/1.75.0/toolchains/1.75.0-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library",
+    "crates": [
+        {
+            "root_module": "/home/sandev/Dev/learning-rust/files/hello_world.rs",
+            "edition": "2021",
+            "deps": []
+        }
+    ]
+}
