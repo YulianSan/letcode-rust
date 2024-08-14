@@ -8,7 +8,8 @@ impl Solution {
         let mut polindrome = String::new();
         for (i, c) in s.chars().enumerate() {
             if let Some(position) = positions.get(&c) {
-                'p: for p in position.iter() {
+                for p in position.iter() {
+
                     let possible_polindrome = &s[*p..=i];
                     let middle = ((possible_polindrome.len() as f64 / 2f64).floor()).max(0.0) as usize;
                     let mut middle_end = middle;
@@ -16,15 +17,16 @@ impl Solution {
                     if possible_polindrome.len() % 2 != 0 {
                         middle_end += 1;
                     }
-                    
-                    if polindrome.len() >= possible_polindrome.len() {
-                        continue 'p;
-                    }
 
+                    if polindrome.len() >= possible_polindrome.len() {
+                        break;
+                    }
+                    
                     if possible_polindrome[..middle].chars().eq(possible_polindrome[middle_end..].chars().rev()) {
                         if polindrome.len() < possible_polindrome.len() {
                             polindrome = possible_polindrome.to_string();
                         }
+                        break;
                     }
                 }
 
@@ -39,6 +41,7 @@ impl Solution {
             }
             positions.insert(c, Box::new(vec![i]));
         }
+
 
         polindrome
     }
