@@ -7,5 +7,6 @@ pub mod zigzag_conversion;
 pub mod reverse_integer;
 pub mod string_to_integer_atoi;
 pub mod two_keys_keyboard;
+pub mod palindrome_number;
 
 fn main() { }
