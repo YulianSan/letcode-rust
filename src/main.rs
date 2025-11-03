@@ -10,5 +10,12 @@ pub mod two_keys_keyboard;
 pub mod palindrome_number;
 pub mod regular_expression_matching;
 pub mod strange_printer;
+pub mod vowel_spellchecker;
 
-fn main() { }
+fn main() { 
+    let x = 10;
+    let y = 10;
+
+    let z = x + y;
+    println!("{z}");
+}
