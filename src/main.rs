@@ -11,6 +11,7 @@ pub mod palindrome_number;
 pub mod regular_expression_matching;
 pub mod strange_printer;
 pub mod vowel_spellchecker;
+pub mod detect_cycles_in_2d_grid;
 
 fn main() { 
     let x = 10;
